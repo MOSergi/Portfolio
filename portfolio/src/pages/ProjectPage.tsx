@@ -58,7 +58,7 @@ export const ProjectPage = ()=>{
                             projects.map((proj)=>{
                                 if (proj.id !== REPO_EXCLUDE_ID){
                                     return(
-                                        <div className="w-[340px] h-[340px] border border-amber-400 rounded flex flex-col items-center">
+                                        <div key={proj.id} className="w-[340px] h-[340px] border border-amber-400 rounded flex flex-col items-center">
                                             <img src={proj.owner.avatar_url} alt="Mosergi Logo" className="h-[250px] w-full rounded"/>
                                             <h3 className="text-center font-bold mt-1 text-[18px]">{proj.name}</h3>
                                             <button className="bg-amber-400 hover:bg-amber-500 w-[300px] mt-2 p-2 rounded">
