@@ -49,6 +49,8 @@ export const ProjectPage = ()=>{
                         <Skeleton />
                         <Skeleton />
                         <Skeleton />
+                        <Skeleton />
+                        <Skeleton />
                     </>
                     :
                     <>
