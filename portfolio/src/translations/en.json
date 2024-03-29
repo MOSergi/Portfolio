@@ -3,6 +3,13 @@
         "experience" : "Experience",
         "projects" : "Projects",
         "Iam" : "Hello, I'm Sergio Orozco Méndez,",
-        "AboutMe": "I consider myself a technology enthusiast. My passion for web development has led me to be a self-taught person committed to constant learning."
+        "AboutMe": "I consider myself a technology enthusiast. My passion for web development has led me to be a self-taught person committed to constant learning.",
+        "with" : "With",
+        "ofExperience" : "of experience",
+        "years" : "years",
+        "tecnologies" : "Tecnologies",
+        "OnOtherHand" : "On the other hand, I have notions of:",
+        "solidPrinciples" : "Solid principles(SOLID)",
+        "hexagonalArchitecture" : "Hexagonal architecture"
     }
 }

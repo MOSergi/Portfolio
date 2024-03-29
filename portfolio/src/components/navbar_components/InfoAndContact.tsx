@@ -17,7 +17,7 @@ export const InfoAndContact = ({ showBurgerMenu } : InfoAndContactProps)=>{
     const [showEmail, setShowEmail] = useState<boolean>(false);
     const [copied, setCopied] = useState<boolean>(false);
 
-    const onclickEmail = ()=>{
+    const onClickEmail = ()=>{
         setShowEmail(prevState => !prevState);
         setCopied(false);
     }
@@ -27,21 +27,23 @@ export const InfoAndContact = ({ showBurgerMenu } : InfoAndContactProps)=>{
         setCopied(true);
     }
 
+    const isLinkActive = ({ isActive } : { isActive : boolean })=>{
+        if (isActive){
+            return "font-bold border-b-2 ml-2 border-amber-400";
+        } else {
+            return "ml-2 font-bold hover:text-white"
+        }
+    }  
+
     return(
-        <div className={showBurgerMenu ? 'flex flex-col items-center gap-5 absolute top-[10%] z-50 w-full h-full bg-black bg-opacity-85' : 'flex items-center max-[590px]:hidden'}>
+        <div className={showBurgerMenu ? 'flex flex-col items-center gap-5 absolute top-[8.55%] z-50 w-full h-full bg-black bg-opacity-85' : 'flex items-center max-[590px]:hidden'}>
             <ul className={showBurgerMenu ? "flex flex-col gap-3 text-center" : "flex"}>
                 {
                     PortfolioRoutes.map((route)=>{
                         return(
                             <NavLink
                                 key={route.path}
-                                className={
-                                    ({ isActive })=> isActive 
-                                    ? 
-                                        "font-bold border-b-2 ml-2 border-amber-400" 
-                                    : 
-                                        "ml-2 font-bold hover:text-white"
-                                } 
+                                className={isLinkActive} 
                                 to={route.path}
                             >
                                     {t(route.text)}
@@ -51,7 +53,7 @@ export const InfoAndContact = ({ showBurgerMenu } : InfoAndContactProps)=>{
                 }
             </ul>
             <div className={showBurgerMenu ? "flex relative" : "flex ml-10"}>
-                <FaEnvelope className="ml-2 cursor-pointer" onClick={onclickEmail}/>
+                <FaEnvelope className="ml-2 cursor-pointer" onClick={onClickEmail}/>
                 {
                     showEmail
                     &&
@@ -60,9 +62,9 @@ export const InfoAndContact = ({ showBurgerMenu } : InfoAndContactProps)=>{
                             {
                             copied 
                             ?
-                            <FaCheck className="mr-1"/>
+                            <FaCheck className="mr-1 text-green-500"/>
                             :
-                            <FaCopy className="mr-1"/>
+                            <FaCopy className="mr-1 text-white"/>
                             }
                             {EMAIL}
                         </span>
