@@ -14,6 +14,7 @@
         "professionalExperience" : "Professional experience",
         "current": "Current",
         "errorDuringRequest" : "Error retrieving project information",
-        "watchRepo" : "Watch repository"
+        "watchRepo" : "Watch repository",
+        "goGomePage" : "Go to home page"
     }
 }

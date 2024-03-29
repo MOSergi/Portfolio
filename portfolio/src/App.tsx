@@ -6,6 +6,7 @@ import LangContext from "./context/LangContext";
 import i18n from "./translations/i18n";
 import { ExperiencePage } from "./pages/ExperiencePage";
 import { ProjectPage } from "./pages/ProjectPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
                 <Route path="/Portfolio/" element={<HomePage />}/>
                 <Route path="/Portfolio/experience" element={<ExperiencePage />}/>
                 <Route path="/Portfolio/projects" element={<ProjectPage />}/>
+                <Route path="/Portfolio/*" element={<NotFoundPage />}/>
             </Routes>
           </PortfolioLayout>
       </BrowserRouter>
