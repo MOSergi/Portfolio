@@ -1,10 +1,10 @@
 export const PortfolioRoutes = [
     {
-        path : "/experience",
+        path : "/Portfolio/experience",
         text: "experience"
     },
     {
-        path : "/projects",
+        path : "/Portfolio/projects",
         text: "projects"
     }
 ]

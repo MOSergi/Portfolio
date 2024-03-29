@@ -20,9 +20,9 @@ function App() {
       <BrowserRouter>
           <PortfolioLayout>
             <Routes>
-                <Route path="/" element={<HomePage />}/>
-                <Route path="/experience" element={<ExperiencePage />}/>
-                <Route path="/projects" element={<ProjectPage />}/>
+                <Route path="/Portfolio/" element={<HomePage />}/>
+                <Route path="/Portfolio/experience" element={<ExperiencePage />}/>
+                <Route path="/Portfolio/projects" element={<ProjectPage />}/>
             </Routes>
           </PortfolioLayout>
       </BrowserRouter>

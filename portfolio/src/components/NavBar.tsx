@@ -38,7 +38,7 @@ export const Navbar = ()=>{
         <nav className="flex justify-around items-center flex-wrap mt-2 p-2">
             <NavLink 
                 className={isLinkActive} 
-                to="/"
+                to="/Portfolio"
             >
                 MOSergi
             </NavLink>
