@@ -8,8 +8,12 @@
         "ofExperience" : "de experiencia",
         "years" : "años",
         "tecnologies" : "Tecnologías",
-        "OnOtherHand" : "Por otro lado, tambien tengo nociones de:",
+        "OnOtherHand" : "Además de nociones en:",
         "solidPrinciples" : "Principios solid(SOLID)",
-        "hexagonalArchitecture" : "Arquitectura hexagonal"
+        "hexagonalArchitecture" : "Arquitectura hexagonal",
+        "professionalExperience" : "Experiencia profesional",
+        "current": "Actualidad",
+        "errorDuringRequest" : "Error al recuperar la información de los proyectos",
+        "watchRepo" : "Ver repositorio"
     }
 }
