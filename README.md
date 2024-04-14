@@ -3,4 +3,4 @@ My portfolio
 
 ## URL PORTFOLIO
 
-https://mosergitech.com/portfolio/
+https://mosergitech.com/Portfolio/
